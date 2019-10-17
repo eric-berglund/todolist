@@ -1,0 +1,24 @@
+{
+  "name": "todolist",
+  "version": "1.0.0",
+  "description": "Simple todolist using bootstrap and javascript",
+  "main": "scripts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ejberglund/todolist.git"
+  },
+  "author": "Eric Berglund",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ejberglund/todolist/issues"
+  },
+  "homepage": "https://github.com/ejberglund/todolist#readme",
+  "devDependencies": {
+    "eslint": "^6.5.1",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2"
+  }
+}
