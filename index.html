@@ -7,6 +7,9 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <!-- Script to add tasks-->
+    <script src=scripts.js></script>
 
     <title>To-do list</title>
   </head>
@@ -17,19 +20,23 @@
 
           <h1 style="text-align: center">Todo List</h1>
 
-          <form method="get" action="">
+          <form name="form1" method="POST" action="">
               <div class="form-group">
                   <label for="task">Task</label>
-                  <input id="task" class="form-control" type="text" name="">
+                  <input id="task" class="form-control" type="text" name="task" required>
               </div>
               <div class="form-group">
-                  <label for="days-to-complete">Days To Complete</label>
-                  <input id="days-to-complete" class="form-control" type="text" name="">
+                  <label for="days">Days To Complete</label>
+                  <input id="days" class="form-control" type="text" name="task"  required>
               </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
+              <button type="submit" class="btn btn-primary" onclick="newTask()">Submit</button>
           </form>
 
           <hr/>
+
+          <ul class="list-unstyled" id="todo"></ul>
+
+          
 
     </div>
 
