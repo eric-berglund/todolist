@@ -1,16 +1,13 @@
-form {
+.alert {
     display: inline-block;
-}
-.form-group {
-    text-align: center;
-    padding-bottom: 25px;
-}
-#todo {
-    margin: 0 auto;
-    width: 500px;
-}
+    float: left;
+    margin: 0.5em;
+  }
 
-a.close {
-  float: right;
-}
+  .form {
+      width: auto;
+  }
+
+
+
 

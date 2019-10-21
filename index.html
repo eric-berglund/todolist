@@ -8,19 +8,20 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     
+    <!-- Page CSS -->
+    <link rel="stylesheet" href="style.css">
+
     <!-- Script to add tasks-->
     <script src=scripts.js></script>
 
     <title>To-do list</title>
   </head>
   <body>
-    
-
     <div class="container">
 
           <h1 style="text-align: center">Todo List</h1>
 
-          <form name="form1" method="POST" action="">
+          <form onsubmit="event.preventDefault(); myAlert(document.getElementById('task').value, document.getElementById('days').value)">
               <div class="form-group">
                   <label for="task">Task</label>
                   <input id="task" class="form-control" type="text" name="task" required>
@@ -29,17 +30,13 @@
                   <label for="days">Days To Complete</label>
                   <input id="days" class="form-control" type="text" name="task"  required>
               </div>
-              <button type="submit" class="btn btn-primary" onclick="newTask()">Submit</button>
+              <button type="submit" class="btn btn-primary">Submit</button>
           </form>
-
           <hr/>
+          <div id="alerts">
 
-          <ul class="list-unstyled" id="todo"></ul>
-
-          
-
+          </div>
     </div>
-
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
