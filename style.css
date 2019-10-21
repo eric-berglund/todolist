@@ -4,8 +4,9 @@
     margin: 0.5em;
   }
 
-  .form {
-      width: auto;
+  form {
+      width: 75%;
+      margin: auto;
   }
 
 
