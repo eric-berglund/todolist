@@ -1,8 +1,14 @@
 /* eslint-disable eqeqeq */
 // eslint-disable-next-line no-unused-vars
-function myAlert(task, days) {
+function myAlert(task, date) {
   const wrapper = document.createElement('div');
 
+  const currentDate = new Date();
+  const goalDate = new Date(date);
+  const timeDifference = goalDate.getTime() - currentDate.getTime();
+  const days = timeDifference / (100 * 3600 * 24);
+
+  // functionality to display 'day' for 1 day and 'days' for values > 1
   let dayOrDays = '';
   if (days == 1) {
     dayOrDays = 'day';
